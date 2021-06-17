@@ -114,12 +114,21 @@ const cartReducer = (state = initialState, action) => {
         case actionTypes.ADJUST_QTY:
             return {
                 ...state,
-                cart: state.cart.map(item => item.id === action.payload.id ? {...item, qty: action.payload.qty} : item)
+                cart: state.cart.map(item => item.id === action.payload.id ? { ...item, qty: action.payload.qty } : item)
             }
         case actionTypes.LOAD_CURRENT_ITEM:
             return {
                 ...state,
                 currentItem: action.payload,
+            }
+        case actionTypes.INCREASE:
+            return {
+                state
+            }
+        case actionTypes.DECREASE:
+            state = state.qty - 1
+            return {
+                state
             }
         default:
             return state

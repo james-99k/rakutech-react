@@ -106,18 +106,6 @@
                     color: $radicalRed;
                 }
             }
-
-            &-count {
-                padding: 0;
-                border: none;
-                width: 15px;
-                text-align: center;
-                
-                &::-webkit-inner-spin-button,
-                ::-webkit-outer-spin-button {
-                    appearance: none;
-                }
-            }
         }
 
         &--total {

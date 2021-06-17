@@ -40,24 +40,24 @@ const NavHeader = ({ cart }) => {
                     </li>
                 </ul>
             </div>
-            <div class="navHeader__right">
+            <div className="navHeader__right">
                 <Link to="/signin">
-                    <button class="navHeader__right--profile" >
+                    <button className="navHeader__right--profile" >
                         {user} Sign in
                     </button>
                 </Link>
-                <Link to="/cart">
-                    <button class="navHeader__right--cart">
+                <Link to="/checkout">
+                    <button className="navHeader__right--cart">
                         {basket}
                         {cartCount}
                         <span>Items</span>
                     </button>
                 </Link>
-                <span class="navHeader__right--total">
+                <span className="navHeader__right--total">
                     <span>$</span>
-                    <input class="total__navHeader" type="number" value="0" disabled />
+                    <input className="total__navHeader" type="number" value="0" disabled />
                 </span>
-                <button class="navHeader__right--search">
+                <button className="navHeader__right--search">
                     {search}
                 </button>
             </div>
@@ -71,4 +71,4 @@ const mapStateToProps = state => {
     }
 }
 
-export default NavHeader
+export default connect(mapStateToProps)(NavHeader)

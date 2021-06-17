@@ -34,3 +34,21 @@ export const loadCurrentItem = (item) => {
         payload: item
     }    
 }
+
+export const increase = (value) => {
+    return {
+        type: actionTypes.INCREASE,
+        payload: {
+            qty: value
+        }
+    }
+}
+
+export const decrease = (value) => {
+    return {
+        type: actionTypes.DECREASE,
+        payload: {
+            qty: value
+        }
+    }
+}

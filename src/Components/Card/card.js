@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { addToCart } from '../../Redux/Cart/cart-actions'
 
-const Card = ({ productData, addToCart }) => {
+const Card = ({ product, addToCart }) => {
     const heart = <FontAwesomeIcon className="heart" icon={faHeart} />
     const cart = <FontAwesomeIcon className="cart" icon={faShoppingCart} />
     const star = <FontAwesomeIcon className="star" icon={faStar} />
@@ -17,22 +17,22 @@ const Card = ({ productData, addToCart }) => {
                 <div className="card" >
                     <div className="card__top">
                         <div className="card__top--hot"><p>
-                            {productData.hot}
+                            {product.hot}
                         </p></div>
                         <div className="card__top--image">
-                            <img className="product-img" src={productData.img} alt={productData.title} />
+                            <img className="product-img" src={product.img} alt={product.title} />
                         </div>
                         <div className="card__top--back">
                             <div className="circle">
                                 {heart}
                             </div>
-                            <button onClick={() => addToCart(productData.id)} className="circle">
+                            <button onClick={() => addToCart(product.id)} className="circle">
                                 {cart}
                             </button>
                         </div>
                     </div>
                     <div className="card__title">
-                        {productData.title}
+                        {product.title}
                     </div>
                     <div className="card__rating">
                         {star}
@@ -43,10 +43,10 @@ const Card = ({ productData, addToCart }) => {
                     </div>
                     <div className="card__price">
                         <div className="card__price--discounted">
-                            {productData.price}
+                            {product.price}
                         </div>
                         <div className="card__price--original">
-                            {productData.originalPrice}
+                            {product.originalPrice}
                         </div>
                     </div>
                 </div>

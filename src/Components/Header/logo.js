@@ -3,11 +3,11 @@ import './logo.scss'
 
 function logo() {
     return (
-        <div class="logo">
-            <h1 class="logo__black">
+        <div className="logo">
+            <h1 className="logo__black">
                 RAKU
             </h1>
-            <h1 class="logo__red">
+            <h1 className="logo__red">
                 TECH
             </h1>
         </div>

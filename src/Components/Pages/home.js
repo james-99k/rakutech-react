@@ -11,8 +11,8 @@ const Home = ({ products }) => {
             <Tab />
             <Logo />
             <div className="cardList">
-                {products.map(prod => (
-                    <Card key={prod.id} productData={prod} />
+                {products.map((product) => (
+                    <Card key={product.id} product={product} />
                 ))}
             </div>
         </div>

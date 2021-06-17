@@ -1,0 +1,618 @@
+@import '../../style.scss';
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+
+        .top {
+            display: flex;
+
+            &__product {
+
+                .product {
+    
+                    &__image {
+                        height: 200px;
+                        width: 260px;
+        
+                        img {
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+        
+                    .set {
+                        padding: 10px 0;
+                        height: 80px;
+        
+                        img {
+                            height: 100%;
+                            border: 1px solid $spindle;
+                        }
+                    }
+                }
+            }
+    
+            &__information {
+                padding: 0 20px;
+    
+                .title {
+                    font-size: 20px;
+                    font-weight: 600;
+                    padding-bottom: 10px;
+    
+                }
+    
+                .review {
+                    display: flex;
+                    padding: 20px 0;
+                    border-bottom: 1px solid $spindle;
+    
+                    .rating {
+    
+                        &__star {
+                            color: $goldenPoppy;
+                        }
+                    }
+                    
+                    .count {
+                        padding: 0 10px;
+                    }
+    
+                    .link {
+    
+                        a {
+                            color: $dodgerBlue;
+                        }
+                    }
+                }
+    
+                .price {
+                    display: flex;
+                    padding: 10px 0;
+                    font-size: 25px;
+    
+                    .discounted {
+                        color: $radicalRed;
+                    }
+    
+                    .original {
+                        padding: 0 10px;
+                        color: $spindle;
+                        text-decoration: line-through;
+                    }
+                }
+    
+                .availability {
+                    display: flex;
+                    padding: 10px 0;
+    
+                    h5 {
+                        padding-right: 40px;
+                    }
+                }
+    
+                .category {
+                    display: flex;
+                    padding: 10px 0;
+    
+                    h5 {
+                        padding-right: 50px;
+                    }
+                }
+    
+                .shipping {
+                    padding: 10px 0;
+                    border-bottom: 1px solid $spindle;
+                }
+    
+                .color {
+                    display: flex;
+                    align-items: center;
+                    padding: 10px 0;
+        
+                    h5 {
+                        padding-right: 20px;
+                    }
+        
+                    .choices {
+                        padding: 10px 0;
+                        display: flex;
+                        justify-content: center;
+        
+                        .blue {
+                            border: 2px solid white;
+                            box-shadow:0 0 0 2px rgb(55, 143, 243);
+                            border-radius: 50%;
+                            width: 15px;
+                            height: 15px;
+                            background-color: blue;
+                            margin-left: 10px;
+                        }
+        
+                        .red {
+                            height: 15px;
+                            width: 15px;
+                            border-radius: 50%;
+                            background-color: red;
+                            margin-left: 10px;
+        
+                            &:hover {
+                                border: 2px solid white;
+                                box-shadow:0 0 0 2px rgb(241, 109, 109);
+                            }
+                        }
+        
+                        .black {
+                            height: 15px;
+                            width: 15px;
+                            border-radius: 50%;
+                            background-color: black;
+                            margin-left: 10px;
+        
+                            &:hover {
+                                border: 2px solid white;
+                                box-shadow:0 0 0 2px black;
+                            }
+                        }
+        
+                        .gold {
+                            height: 15px;
+                            width: 15px;
+                            border-radius: 50%;
+                            background-color: yellow;
+                            margin-left: 10px;
+        
+                            &:hover {
+                                border: 2px solid white;
+                                box-shadow:0 0 0 2px rgb(248, 248, 143);
+                            }
+                        }
+        
+                        .pink {
+                            height: 15px;
+                            width: 15px;
+                            border-radius: 50%;
+                            background-color: #FF00B4;
+                            margin-left: 10px;
+        
+                            &:hover {
+                                border: 2px solid white;
+                                box-shadow:0 0 0 2px #FF00B4;
+                            }
+                        }
+        
+                        .white {
+                            height: 15px;
+                            width: 15px;
+                            border-radius: 50%;
+                            background-color: #EFDFDF;
+                            margin-left: 10px;
+        
+                            &:hover {
+                                border: 2px solid white;
+                                box-shadow:0 0 0 2px #EFDFDF;  
+                            }
+                        }
+                    }
+                }
+    
+                .size {
+                    display: flex;
+                    align-items: center;
+                    padding: 10px 0;
+                    border-bottom: 1px solid $spindle;
+    
+                    h5 {
+                        padding-right: 70px;
+                    }
+    
+                    .dropdown {
+                        padding: 5px 5px;
+                        border: 1px solid $spindle;
+    
+                        i {
+                            padding-left: 20px;
+                        }
+                    }
+        
+                    .dropdown__options {
+                        margin-right: 10px;
+        
+                        ul {     
+                            padding: 5px 0;  
+                            margin: 0;
+                        }
+        
+                        &--tab{
+                            text-align: center;
+                            padding: 5px 18px;
+                            background: $white;
+                            border: 1px solid $spindle;
+                            
+                            &:hover {
+                                cursor: pointer;
+                                border: 1px solid $radicalRed;
+                            }
+                        }
+                    }
+        
+                    a {    
+                        display:block;
+                        text-decoration: none;
+                    }   
+        
+                    li {    
+                        display:block;
+        
+                        ul {
+                            display:none;
+                            position:absolute;
+                            z-index:1;
+        
+                        }
+        
+                        &:hover ul {    
+                            display:block;    
+                        }  
+                    } 
+                }
+    
+                .buttons {
+                    padding: 20px 0;
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid $spindle;
+    
+                    &__left {
+                        border-radius: 6px;
+                        background: #cee5faf6;
+    
+                        .minus {
+                            padding: 10px 5px;
+                            height: 100%;
+                            color: $dodgerBlue;
+    
+                            &:hover {
+                                cursor: pointer;
+                                background: $dodgerBlue;
+                                color: #cee5faf6;
+                                border-top-left-radius: 6px;
+                                border-bottom-left-radius: 6px;
+                            }
+                        }
+
+                        .quantity {
+                            background: $white;
+                            padding: 10px 10px;
+                            width: 40px;
+                            text-align: center;
+                            
+                            &::-webkit-inner-spin-button,
+                            ::-webkit-outer-spin-button {
+                                appearance: none;
+                            }
+                        }
+    
+                        .plus {
+                            padding: 10px 5px;
+                            height: 100%;
+                            color: $dodgerBlue;
+    
+                            &:hover {
+                                cursor: pointer;
+                                background: $dodgerBlue;
+                                color: #cee5faf6;
+                                border-top-right-radius: 6px;
+                                border-bottom-right-radius: 6px;
+                            }
+                        }
+                    }
+    
+                    &__right {
+                        display: flex;
+                        width: 190px;
+                        justify-content: space-between;
+    
+                        .add-to-cart {
+                            padding: 10px 10px;
+                            border-radius: 6px;
+                            background: #cee5faf6;
+        
+                            i {
+                                padding-right: 10px;
+                                color: $dodgerBlue;
+                            }
+        
+                            span {
+                                color: $dodgerBlue;
+                            }
+        
+                            &:hover {
+                                cursor: pointer;
+                                background: $dodgerBlue;
+        
+                                i {
+                                    color: #cee5faf6;
+                                }
+        
+                                span {
+                                    color: #cee5faf6;
+                                }
+                            }
+                        }
+        
+                        .favorite {
+                            padding: 10px 10px;
+                            border-radius: 6px;
+                            background: #cee5faf6;
+                            color: $dodgerBlue;
+        
+                            i {
+                                color: $dodgerBlue;
+                            }
+        
+                            &:hover {
+                                cursor: pointer;
+                                background: $dodgerBlue;
+        
+                                i {
+                                    color: #cee5faf6;
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                .social {
+                    padding: 20px 0;
+                    height: 80px;
+                    display: flex;
+                    justify-content: space-between;
+    
+                    .facebook {
+                        background: $BdazzledBlue;
+                        border-radius: 6px;
+                        padding: 10px;
+                        width: 170px;
+                        text-align: center;
+    
+                        i, span {
+                            color: $white;
+                            font-size: 14px;
+                        }
+    
+                        &:hover {
+                            cursor: pointer;
+                            background: $white;
+                            border: 1px solid $BdazzledBlue;
+    
+                            i, span {
+                                color: $BdazzledBlue;
+                            }
+                        }
+                    }
+    
+                    .twitter {
+                        background: $deepSkyBlue;
+                        border-radius: 6px;
+                        padding: 10px;
+                        width: 170px;
+                        text-align: center;
+    
+                        i, span {
+                            color: $white;
+                            font-size: 14px;
+                        }
+    
+                        &:hover {
+                            cursor: pointer;
+                            background: $white;
+                            border: 1px solid $deepSkyBlue;
+    
+                            i, span {
+                                color: $deepSkyBlue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+
+            &__container {
+                background: $whisper;
+                width: 600px;
+                display: flex;
+                flex-direction: column  ;
+                justify-content: center;
+
+                &--nav{
+                    padding: 20px 0;
+
+                    ul {
+                        display: flex;
+                    li {
+                        list-style: none;
+                        
+                        a {
+                            padding: 0 10px;
+                        }
+                    }
+                }
+            }
+
+            &--text {
+                padding: 10px 10px;
+                
+                p {
+                    font-size: 12px;
+                    padding: 10px;
+                }
+            }
+            }
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .best-seller {
+            display: flex;
+            flex-direction: column;
+            padding: 0 20px;
+
+            .text {
+                padding-bottom: 20px;
+            }
+
+            .card {
+                height: 270px;
+                width: 200px;
+                border-radius: 5px;
+                box-shadow: 0 0 5px $spindle;
+    
+                &__image {
+                    padding-left: 5px;
+                    height: 123px;
+                    width: 100%;
+                    background-image: url("../Images/macbook.png");
+                    background-size: cover;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+        
+                    .image {
+                        height: 100%;
+                        width: 100%;
+                    }
+        
+                    .heart {
+                        height: 30px;
+                        width: 30px;
+                        color: $dodgerBlue;
+                        border: 1px solid $dodgerBlue;
+                        border-radius: 50%;
+                        padding-top: 7px;
+                        text-align: center;
+                        margin: 0 10px;
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+                    
+                    .cart {
+                        height: 30px;
+                        width: 30px;
+                        color: $dodgerBlue;
+                        border: 1px solid $dodgerBlue;
+                        border-radius: 50%;
+                        padding-top: 7px;
+                        text-align: center;
+                        margin: 0 10px;
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+                }
+            
+                &__title {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 40px;
+                    color: $raisinBlack;
+                    font-weight: 600;
+                    font-size: 14px;
+                }
+            
+                &__rating {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 25px;
+                    height: 10px;
+            
+                    &--yellow {
+                        color: $goldenPoppy;
+                    }
+            
+                    &--gray {
+                        color: $spindle;
+                    }
+                }
+            
+                &__price {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 20px;
+                    font-size: 16px;
+            
+                    &--discounted {
+                        color: $radicalRed;
+                    }
+            
+                    &--original {
+                        margin-left: 15px;
+                        color: $spindle;
+                        text-decoration: line-through;
+                    }
+                }
+        
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .slider {
+                padding: 30px 0;
+                height: 20px;
+                width: 200px;
+                text-align: center;
+            }
+        }
+
+        .banner {
+            padding: 20px 20px;
+
+            &__content {
+                height: 300px;
+                width: 200px;
+                background: $spindle;
+
+                &--title {
+                    padding: 10px 0;
+                    margin-top: 10px;
+                    margin-left: 10px;
+                }
+
+                &--detail {
+                    padding: 10px 0;
+                    margin-left: 10px;
+                }
+
+                &--price {
+                    padding: 1  0px 0;
+                    margin-left: 10px;
+                }
+
+                &--image {
+                    height: 100px;
+                    width: 150px;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

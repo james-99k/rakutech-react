@@ -1,0 +1,20 @@
+@import '../../style.scss';
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 32px;
+    width: 100%;
+    margin: 0;
+    padding: 50px 0;
+
+    &__black {
+        color: $darkCharcoal;
+    }
+
+    &__red {
+        color: $red1;
+    }
+}

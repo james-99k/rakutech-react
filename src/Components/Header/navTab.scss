@@ -1,0 +1,182 @@
+@import '../../style.scss';
+
+.navHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px;
+    border-bottom: 1px solid $spindle;
+    
+        &__left {
+        display: flex;
+
+        &--menu {
+            height: 40px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .dropdown {
+                padding: 5px 5px;
+
+                &:hover {
+                    color: $radicalRed;
+
+                    i {
+                        color: $radicalRed;
+                    }
+                }
+            }
+
+            .dropdown__options {
+                margin-right: 10px;
+
+                ul {     
+                    padding: 5px 0;  
+                    margin: 0;
+                }
+
+                &--tab{
+                    text-align: center;
+                    padding: 5px 10px;
+                    background: $white;
+                    
+                    &:hover {
+                        
+                        a {
+                            color: $radicalRed;
+                        }
+                    }
+                }
+            }
+
+            a {    
+                display:block;
+                text-decoration: none;
+            }   
+
+            li {    
+                display:block;
+
+                ul {
+                    display:none;
+                    position:absolute;
+                    z-index:1;
+
+                }
+
+                &:hover ul {    
+                    display:block;    
+                }  
+            }   
+        }
+        }
+
+        &__right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--profile {
+            background: none;
+            border: none;
+            padding: 0 5px;
+            height: 100%;
+            
+            &:hover {
+                cursor: pointer;
+                color: $radicalRed;
+
+                * {
+                    color: $radicalRed;
+                }
+            }
+        }
+
+        &--cart {
+            background: none;
+            border: none;
+            padding: 0 5px;
+            height: 100%;
+            
+            &:hover {
+                
+                * {
+                    cursor: pointer;
+                    color: $radicalRed;
+                }
+            }
+
+            &-count {
+                padding: 0;
+                border: none;
+                width: 15px;
+                text-align: center;
+                
+                &::-webkit-inner-spin-button,
+                ::-webkit-outer-spin-button {
+                    appearance: none;
+                }
+            }
+        }
+
+        &--total {
+            padding: 0 5px;
+
+            .total__navHeader {
+                padding: 0;
+                border: none;
+                width: 30px;
+                text-align: center;
+                
+                &::-webkit-inner-spin-button,
+                ::-webkit-outer-spin-button {
+                    appearance: none;
+                }
+            }
+        }
+
+        &--search {
+            padding: 0 15px;
+            background: none;
+            border: none;
+            height: 100%;
+
+            &:hover {
+                cursor: pointer;
+
+                * {
+                    color: $radicalRed;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 960px) {
+.navHeader{
+    padding: 0 100px;
+}
+}
+
+// medium 720px
+@media (max-width: 720px) {
+.navHeader{
+    padding: 0 50px;
+    
+    * {
+      font-size: 14px;
+    }
+}
+}
+
+// small 540px
+@media (max-width: 540px) {
+.navHeader{
+    padding: 0 10px;
+
+    * {
+      font-size: 10px;
+    }
+}
+}

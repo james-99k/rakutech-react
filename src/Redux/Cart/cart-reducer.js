@@ -114,7 +114,7 @@ const cartReducer = (state = initialState, action) => {
         case actionTypes.ADJUST_QTY:
             return {
                 ...state,
-                cart: state.cart.map(item => item.id === action.payload.id ? { ...item, qty: action.payload.qty } : item)
+                cart: state.cart.map(item => item.id === action.payload.id ? { ...item, qty: +action.payload.qty } : item)
             }
         case actionTypes.LOAD_CURRENT_ITEM:
             return {
@@ -123,7 +123,8 @@ const cartReducer = (state = initialState, action) => {
             }
         case actionTypes.INCREASE:
             return {
-                state
+                ...state,
+                cart: state.cart.map(item => item.id === action.payload.id ? { ...item, qty: +action.payload.qty + 1} : item)
             }
         case actionTypes.DECREASE:
             state = state.qty - 1

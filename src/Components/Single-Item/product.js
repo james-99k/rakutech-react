@@ -2,8 +2,10 @@ import React from 'react'
 import './product.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar, faCaretDown, faMinus, faPlus, faShoppingCart, faHeart } from '@fortawesome/free-solid-svg-icons'
+import { connect } from 'react-redux'
+import { addToCart } from '../../Redux/Cart/cart-actions'
 
-const product = () => {
+const product = ({ currentItem, addToCart }) => {
     const star = <FontAwesomeIcon className="star" icon={faStar} />
     const down = <FontAwesomeIcon className="down" icon={faCaretDown} />
     const minus = <FontAwesomeIcon className="minus" icon={faMinus} />
@@ -18,7 +20,7 @@ const product = () => {
                     <div class="top__product">
                         <div class="product">
                             <div class="product__image">
-                                <img src="" alt="" id="product__image" />
+                                <img src={currentItem.img} alt={currentItem.title} id="product__image" />
                             </div>
                             <div class="set">
                                 <img src="" alt="" />
@@ -33,7 +35,7 @@ const product = () => {
                     </div>
                     <div class="top__information">
                         <div class="title">
-                            Beats Solo2 On Ear Headphones - Black
+                            {currentItem.title}
                         </div>
                         <div class="review">
                             <div class="rating">
@@ -52,10 +54,10 @@ const product = () => {
                         </div>
                         <div class="price">
                             <div class="discounted">
-                                $499
+                                {currentItem.price}
                             </div>
                             <div class="original">
-                                $599
+                                {currentItem.originalPrice}
                             </div>
                         </div>
                         <div class="availability">
@@ -97,14 +99,14 @@ const product = () => {
                         </div>
                         <div class="buttons">
                             <div class="buttons__left">
-                                <div class="add-to-cart">
+                                <div class="add-to-cart" >
                                     {minus}
                                     <input class="quantity" type="number" value="0" disabled />
                                     {plus}
                                 </div>
                             </div>
                             <div class="buttons__right">
-                                <div class="add-to-cart">
+                                <div class="add-to-cart" onClick={() => addToCart(currentItem.id)}>
                                     {cart}
                                     <span>Add To Cart</span>
                                 </div>
@@ -161,4 +163,16 @@ const product = () => {
     )
 }
 
-export default product
+const mapStateToProps = state => {
+    return {
+        currentItem: state.cart.currentItem
+    }
+}
+
+const mapDispatachToProps = (dispatch) => {
+    return {
+        addToCart: (id) => dispatch(addToCart(id))
+    }
+}
+
+export default connect(mapStateToProps, mapDispatachToProps)(product)

@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 // import SignUp from './Components/Pages/page-signUp'
 import Home from './Components/Pages/home'
 import Checkout from './Components/Pages/checkout'
+import SingleProduct from './Components/Pages/singleProduct'
 // import Product from './Components/Pages/page-product'
 // import Store from './Components/Pages/page-store'
 // import Detail from './Components/Footer/detail';
@@ -20,6 +21,7 @@ function App() {
           <Route path="/signup" exact component={SignUp} /> */}
           <Route path="/" exact component={Home} />
           <Route path="/checkout" exact component={Checkout} />
+          <Route path="/product/:id" exact component={SingleProduct} />
           {/* <Route path="/product" exact component={Product} />
           <Route path="/store" exact component={Store} />
           <Route path="/accessories" exact component={Accessories} /> */}

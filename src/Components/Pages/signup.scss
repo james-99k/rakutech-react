@@ -1,0 +1,27 @@
+@import '../../style.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: $blueCharcoal;
+    // font-family: $proxima;
+}
+
+.wallpaper {
+    
+    background-image: url("../Images/cover-img.jpg");
+    background-blend-mode: luminosity;
+
+}
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    opacity: 1;
+    height: 800px;
+    background: transparent linear-gradient(180deg, #00000029 0%, #000000 100%) 0% 0% no-repeat padding-box;
+}

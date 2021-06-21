@@ -165,7 +165,6 @@
     }
 
     &:hover {
-        cursor: pointer;
         
         .card__top{
             
@@ -199,6 +198,11 @@
                     }
                 }
             }
+        }
+
+        .card__title {
+            color: $radicalRed;
+            font-size: 20px;
         }
     }
 }

@@ -1,0 +1,46 @@
+@import '../../style.scss';
+
+.latest-news {
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .news {
+            width: 320px;
+            height: 100%;
+            display: flex;
+            padding: 10px 0;
+        
+            &__image {
+                width: 140px;
+                height: 140px;
+                object-fit: contain;
+            }
+        
+            &__details {
+                display: flex;
+                flex-direction: column;
+                margin: 10px 20px 10px 20px;
+        
+                &--date {
+                    color: $spindle;
+                    font-size: 14px;
+                    margin-top: 10px;
+                }
+        
+                &--title {
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin-top: 10px;
+                }
+        
+                &--text {
+                    font-size: 14px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

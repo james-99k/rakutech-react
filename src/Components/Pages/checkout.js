@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './checkout.scss'
 import Tab from '../Header/navTab'
 import Logo from '../Header/logo'
+import NavMain from '../Navigation/navMain'
 import TabCheckout from '../Tabs/checkoutTab'
 import Cart from '../Cart/cart'
 import CheckoutSearch from '../Search/checkoutSearch'
@@ -29,6 +30,7 @@ const Checkout = ({ cart }) => {
         <div>
             <Tab />
             <Logo />
+            <NavMain />
             <TabCheckout />
             {cart.map((item) => (
                 <Cart key={item.id} itemData={item} />

@@ -1,0 +1,106 @@
+@import '../../style.scss';
+
+.advertisement {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: -20px;
+    margin-bottom: 50px;
+
+    &__column {
+        margin: 0;
+        width: 70%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+
+        &--1 {
+            height: 100%;
+            width: 30%;
+            background: $wildWatermelon;
+            //background-image: url(images/iPhone-1.png);
+            background-size: cover;
+
+            .image {
+                height: 50%;
+                width: 100%;
+                z-index: 1;
+            }
+
+            .title {
+                color: $white;
+                padding: 20px 30px;
+                font-weight: 600;
+            }
+
+            .details {
+                color: $white;
+                padding-left: 30px;
+                padding-right: 10   0px;
+                font-size: 10px;
+            }
+
+            .price {
+                color: $white;
+                padding: 20px 30px;
+            }
+        }
+    
+        &--2 {
+            height: 100%;
+            width: 30%;
+            background: $aliceBlue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .image {
+                height: 80%;
+                width: 90%;
+            }
+
+            .row {
+                display: flex;
+                justify-content: space-between;
+                width: 80%;
+
+                &__title {
+                    font-weight: 600;
+                }
+            }
+        }
+    
+        &--3 {
+            height: 100%;
+            width: 30%;
+            background: $spindle;
+            display: flex;
+
+            .content {
+
+                &__title {
+                    padding: 20px 20px;
+                    font-weight: 600;
+                }
+    
+                &__details {
+                    padding-left: 20px;
+                    padding-right: 10   0px;
+                    font-size: 10px;
+                }
+    
+                &__price {
+                    padding: 20px 20px;
+                }
+            }
+
+            .image {
+                height: 80%;
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    }
+}

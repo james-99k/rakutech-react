@@ -14,135 +14,135 @@ const product = ({ currentItem, addToCart }) => {
     const heart = <FontAwesomeIcon className="heart" icon={faHeart} />
 
     return (
-        <div class="product-container">
-            <div class="product-container__left">
-                <div class="top">
-                    <div class="top__product">
-                        <div class="product">
-                            <div class="product__image">
+        <div className="product-container">
+            <div className="product-container__left">
+                <div className="top">
+                    <div className="top__product">
+                        <div className="product">
+                            <div className="product__image">
                                 <img src={currentItem.img} alt={currentItem.title} id="product__image" />
                             </div>
-                            <div class="set">
+                            <div className="set">
                                 <img src="" alt="" />
                                 <img src="" alt="" />
                                 <img src="" alt="" />
                                 <img src="" alt="" />
                             </div>
                         </div>
-                        <div class="details">
+                        <div className="details">
 
                         </div>
                     </div>
-                    <div class="top__information">
-                        <div class="title">
+                    <div className="top__information">
+                        <div className="title">
                             {currentItem.title}
                         </div>
-                        <div class="review">
-                            <div class="rating">
+                        <div className="review">
+                            <div className="rating">
                                 {star}
                                 {star}
                                 {star}
                                 {star}
                                 {star}
                             </div>
-                            <div class="count">
+                            <div className="count">
                                 0 reviews
                             </div>
-                            <div class="link">
+                            <div className="link">
                                 <a href="#">Submit a review</a>
                             </div>
                         </div>
-                        <div class="price">
-                            <div class="discounted">
+                        <div className="price">
+                            <div className="discounted">
                                 {currentItem.price}
                             </div>
-                            <div class="original">
+                            <div className="original">
                                 {currentItem.originalPrice}
                             </div>
                         </div>
-                        <div class="availability">
+                        <div className="availability">
                             <h5>Availability</h5>
                             <span>In Stock</span>
                         </div>
-                        <div class="category">
+                        <div className="category">
                             <h5>Category</h5>
                             <span>Accessories</span>
                         </div>
-                        <div class="shipping">
+                        <div className="shipping">
                             <h5>Free Shipping</h5>
                         </div>
-                        <div class="color">
+                        <div className="color">
                             <h5>Select Color</h5>
-                            <div class="choices">
-                                <div class="black active"
+                            <div className="choices">
+                                <div className="black active"
                                     onclick="document.getElementById('product__image').src='images/beats_black.png'"></div>
-                                <div class="red"
+                                <div className="red"
                                     onclick="document.getElementById('product__image').src='images/beats_red.png'"></div>
-                                <div class="gold"
+                                <div className="gold"
                                     onclick="document.getElementById('product__image').src='images/beats_gold.png'"></div>
-                                <div class="pink"
+                                <div className="pink"
                                     onclick="document.getElementById('product__image').src='images/beats_pink.png'"></div>
-                                <div class="white"
+                                <div className="white"
                                     onclick="document.getElementById('product__image').src='images/beats_white.png'"></div>
                             </div>
                         </div>
-                        <div class="size">
+                        <div className="size">
                             <h5>Size</h5>
-                            <li class="dropdown__options"><a href='#' class="dropdown language">XS{down}</a>
+                            <li className="dropdown__options"><a href='#' className="dropdown language">XS{down}</a>
                                 <ul>
-                                    <li class="dropdown__options--tab"><a href='#'>SM</a></li>
-                                    <li class="dropdown__options--tab"><a href='#'>MD</a></li>
-                                    <li class="dropdown__options--tab"><a href='#'>LG</a></li>
-                                    <li class="dropdown__options--tab"><a href='#'>XL</a></li>
+                                    <li className="dropdown__options--tab"><a href='#'>SM</a></li>
+                                    <li className="dropdown__options--tab"><a href='#'>MD</a></li>
+                                    <li className="dropdown__options--tab"><a href='#'>LG</a></li>
+                                    <li className="dropdown__options--tab"><a href='#'>XL</a></li>
                                 </ul>
                             </li>
                         </div>
-                        <div class="buttons">
-                            <div class="buttons__left">
-                                <div class="add-to-cart" >
+                        <div className="buttons">
+                            <div className="buttons__left">
+                                <div className="add-to-cart" >
                                     {minus}
-                                    <input class="quantity" type="number" value="0" disabled />
+                                    <input className="quantity" type="number" value="0" disabled />
                                     {plus}
                                 </div>
                             </div>
-                            <div class="buttons__right">
-                                <div class="add-to-cart" onClick={() => addToCart(currentItem.id)}>
+                            <div className="buttons__right">
+                                <div className="add-to-cart" onClick={() => addToCart(currentItem.id)}>
                                     {cart}
                                     <span>Add To Cart</span>
                                 </div>
-                                <div class="favorite">
+                                <div className="favorite">
                                     {heart}
                                 </div>
                             </div>
                         </div>
-                        <div class="social">
-                            <div class="facebook">
-                                <i class="fab fa-facebook-f"></i>
+                        <div className="social">
+                            <div className="facebook">
+                                <i className="fab fa-facebook-f"></i>
                                 <span>Share on Facebook</span>
                             </div>
-                            <div class="twitter">
-                                <i class="fab fa-twitter"></i>
+                            <div className="twitter">
+                                <i className="fab fa-twitter"></i>
                                 <span>Share on Twitter</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="bottom">
-                    <div class="bottom__container">
-                        <div class="bottom__container--nav">
+                <div className="bottom">
+                    <div className="bottom__container">
+                        <div className="bottom__container--nav">
                             <ul>
                                 <li><a href="#">Product Infomation</a></li>
                                 <li><a href="#">Reviews <span>0</span></a></li>
                                 <li><a href="#">Another tab</a></li>
                             </ul>
                         </div>
-                        <div class="bottom__container--text">
+                        <div className="bottom__container--text">
                             <p>Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate,
                                 tristique
                                 ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et
                                 ultrices
                                 posuere cubilia Curae; Aenean eleifend laoreet congue. Vivamus adipiscing nisl ut dolor
-                                dignissim semper. Nulla luctus malesuada tincidunt. Class aptent taciti sociosqu ad litora
+                                dignissim semper. Nulla luctus malesuada tincidunt. className aptent taciti sociosqu ad litora
                                 torquent per conubia nostra, per inceptos himenaeos. Integer enim purus, posuere at
                                 ultricies
                                 eu, placerat a felis. Suspendisse aliquet urna pretium eros convallis interdum. Quisque in

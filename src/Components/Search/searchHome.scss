@@ -1,0 +1,23 @@
+@import '../../style.scss';
+
+.page_search{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+
+    .page_search_box{
+        border: 2px solid $aliceBlue;
+        width: 600px;
+        height: 60px;
+        border-top-left-radius: 5%;
+        border-bottom-left-radius: 5%;
+    }
+
+    .search_button{
+        background-color:  #2E90E5;
+        width: 120px;
+        border: 1px solid transparent;
+        border-top-right-radius: 5%;
+        border-bottom-right-radius: 5%;
+    }
+}

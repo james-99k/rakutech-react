@@ -1,0 +1,184 @@
+@import '../../style.scss';
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+    background: $white;
+    border-radius: 6px;
+    width: 350px;
+
+    &__title {
+        padding-top: 30px;
+        font-weight: 600;
+        font-size: 30px;
+    }
+
+    &__apple {
+        padding: 15px 0;
+        width: 80%;
+        background: $black;
+        margin: 20px 0;
+        border: none;
+        border: 1px solid $black;
+        border-radius: 6px;
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+            font-size: 20px;
+            padding: 0 20px;
+            color: $white;
+        }
+
+        &:hover {
+            cursor: pointer;
+            background: none;
+            color: $black;
+            font-size: 14px;
+            font-weight: 600;
+
+            i {
+                color: $black;
+                font-weight: 600;
+            }
+        }
+    }
+
+    &__facebook {
+        padding: 15px 0;
+        width: 80%;
+        border: 1px solid #3A5998;
+        background: #3A5998;
+        margin: 5px 0;
+        border-radius: 6px;
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+            font-size: 20px;
+            padding: 0 20px;
+            color: $white;
+        }
+
+        &:hover {
+            cursor: pointer;
+            background: none;
+            color: #3A5998;
+            font-size: 14px;
+            font-weight: 600;
+
+            i {
+                color: #3A5998;
+                font-weight: 600;
+            }
+        }
+    }
+
+    &__or {
+        display: flex;
+        align-items: center;
+        padding: 20px 0;
+        
+        .line {
+            height: 1px;
+            width: 145px;
+            background: $black;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+
+        .email {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 10px 0;
+
+            span {
+                font-size: 14px;
+            }
+
+            input {
+                height: 40px;
+                border-radius: 6px;
+            }
+
+            #email {
+                padding: 0 10px;
+            }
+        }
+
+        .password {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 10px 0;
+
+            span {
+                font-size: 14px;
+            }
+
+            input {
+                height: 40px;
+                border-radius: 6px;
+            }
+          
+            #password {
+                padding: 0 10px;
+            }
+        }
+
+        .signin-btn {
+            padding: 15px 0;
+            background: $red1;
+            margin: 20px 0;
+            border: 1px solid $red1;
+            border-radius: 6px;
+            color: $white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                color: $white;
+            }
+
+            &:hover {
+                cursor: pointer;
+                background: none;
+
+                span {
+                    color: $red1;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    
+
+    &__terms {
+        font-size: 12px;
+        margin: 0 20px;
+    }
+
+    &__signup {
+        font-size: 12px;
+        margin: 20px 20px;
+
+        a {
+            color: #B2002D;
+        }
+    }
+}

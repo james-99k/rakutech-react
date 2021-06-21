@@ -1,0 +1,135 @@
+@import '../../style.scss';
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+    background: $white;
+    border-radius: 6px;
+    width: 350px;
+
+    &__title {
+        padding-top: 30px;
+        font-weight: 600;
+        font-size: 30px;
+    }
+
+    &__signin {
+        font-size: 12px;
+        margin: 20px 20px;
+        background: $white;
+
+        a {
+            color: #B2002D;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+
+        .fullname {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 10px 0;
+
+            label {
+                font-size: 14px;
+            }
+
+            input {
+                height: 40px;
+                border-radius: 6px;
+            }
+
+            #fullname {
+                padding: 0 10px;
+            }
+        }
+
+        .email {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 10px 0;
+
+            label {
+                font-size: 14px;
+            }
+
+            input {
+                height: 40px;
+                border-radius: 6px;
+            }
+
+            #email {
+                padding: 0 10px;
+            }
+        }
+
+        .password {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 10px 0;
+
+            label {
+                font-size: 14px;
+            }
+
+            input {
+                height: 40px;
+                border-radius: 6px;
+            }
+
+            #password {
+                padding: 0 10px;
+            }
+        }
+    }
+
+    &__email-updates {
+        display: flex;
+        width: 80%;
+        margin: 10px 0;
+        font-size: 12px;
+
+        input {
+            margin-right: 10px;
+        }
+    }
+
+    &__signup {
+
+        button {
+            color: $white;
+            background: $red1;
+            margin: 10px 0;
+            border: 1px solid $red1;
+            border-radius: 6px;
+            padding: 15px 0;
+            width: 100%;
+
+            &:hover {
+                cursor: pointer;
+                background: none;
+                color: $red1;
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+
+        
+    }
+
+    &__terms {
+        font-size: 12px;
+        margin: 20px 20px;
+    }
+
+    
+}

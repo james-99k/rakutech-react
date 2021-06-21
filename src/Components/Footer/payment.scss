@@ -1,0 +1,22 @@
+.payment{
+    border-top: 1px solid lightgray;
+    display: flex;
+    flex-direction: row;
+    padding: 0 350px;
+    padding-top: 20px;
+    justify-content: space-between;
+
+    p{
+        font-size: 14px;
+        color: #C1C8CE;
+
+    }
+
+    .payment__option{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        list-style-type: none;
+
+    }
+}

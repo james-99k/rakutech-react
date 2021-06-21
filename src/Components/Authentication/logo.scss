@@ -1,0 +1,45 @@
+@import '../../style.scss';
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin: auto auto;
+
+    &__title {
+        display: flex;
+        padding: 20px 0;
+        justify-content: flex-start ;
+        width: 100%;
+        margin-left: -140px;
+
+        .logo-white {
+            color: $white;
+        }
+
+        .logo-red {
+            color: $red1;
+        }
+    }
+
+    &__design {
+        display: flex;
+        justify-content: flex-start ;
+        width: 100%;
+
+        .line {
+            height: 5px;
+            width: 50px;
+            background: #B2002D;
+        }
+    }
+
+    &__text {
+        display: flex;
+        padding: 20px 0;
+        justify-content: flex-start ;
+        width: 100%;
+        color: $white;
+    }
+}

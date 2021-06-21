@@ -1,5 +1,6 @@
 import React from 'react'
 import './home.scss'
+import NewsLetter from '../Modal/newsLetter'
 import Phone from '../Images/smart-phone-card.png'
 import Laptop from '../Images/macbook2.png'
 import Tablet from '../Images/ipad-back.png'
@@ -22,6 +23,7 @@ import { connect } from 'react-redux'
 const Home = ({ products }) => {
     return (
         <div>
+            <NewsLetter />
             <Tab />
             <Logo />
             <NavMain />

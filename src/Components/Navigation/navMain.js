@@ -5,17 +5,17 @@ import { Link } from 'react-router-dom'
 function navMain() {
     return (
         <section>
-            <div class="nav">
-                <ul class="nav__links">
-                    <li class="nav__links--home">
+            <div className="nav">
+                <ul className="nav__links">
+                    <li className="nav__links--home">
                         <Link to="/" >
                             HOME
                         </Link>
-                        <div class="mega-box">
-                            <div class="mega-box__content">
-                                <div class="mega-box__content--column">
+                        <div className="mega-box">
+                            <div className="mega-box__content">
+                                <div className="mega-box__content--column">
                                     <header>Category</header>
-                                    <ul class="links">
+                                    <ul className="links">
                                         <li><a href="#">Airport & Wireless</a></li>
                                         <li><a href="#">AppleCare</a></li>
                                         <li><a href="#">Bags, Shells & Sleeves</a></li>
@@ -23,9 +23,9 @@ function navMain() {
                                         <li><a href="#">Cables & Docks</a></li>
                                     </ul>
                                 </div>
-                                <div class="mega-box__content--column">
+                                <div className="mega-box__content--column">
                                     <header> </header>
-                                    <ul class="links">
+                                    <ul className="links">
                                         <li><a href="#">Cameras & Video</a></li>
                                         <li><a href="#">Car & Travel</a></li>
                                         <li><a href="#">Cases & Films</a></li>
@@ -33,9 +33,9 @@ function navMain() {
                                         <li><a href="#">Cables & Docks</a></li>
                                     </ul>
                                 </div>
-                                <div class="mega-box__content--column">
+                                <div className="mega-box__content--column">
                                     <header>Category</header>
-                                    <ul class="links">
+                                    <ul className="links">
                                         <li><a href="#">Chargin Devices</a></li>
                                         <li><a href="#">Connected Home</a></li>
                                         <li><a href="#">Device Care</a></li>
@@ -43,16 +43,16 @@ function navMain() {
                                         <li><a href="#">Fitness & Sport</a></li>
                                     </ul>
                                 </div>
-                                <div class="mega-box__content--column">
+                                <div className="mega-box__content--column">
                                     <header> </header>
-                                    <ul class="links">
+                                    <ul className="links">
                                         <li><a href="#">Headphones</a></li>
                                         <li><a href="#">HealthKit</a></li>
                                     </ul>
                                 </div>
-                                <div class="mega-box__content--column">
+                                <div className="mega-box__content--column">
                                     <header>Category</header>
-                                    <ul class="links">
+                                    <ul className="links">
                                         <li><a href="#">Mice & Keyboard</a></li>
                                         <li><a href="#">Music Creation</a></li>
                                         <li><a href="#">Networking & Server</a></li>
@@ -82,7 +82,7 @@ function navMain() {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/accessories" >
+                        <Link to="/fake-product" >
                             ACCESSORIES
                         </Link>
                     </li>

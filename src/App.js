@@ -10,6 +10,8 @@ import Detail from './Components/Footer/detail'
 import NavFooter from './Components/Footer/navFooter'
 import Payment from './Components/Footer/payment'
 
+import FakeProduct from './Components/FAKEPRODUCT/page'
+
 function App() {
   return (
     <div>
@@ -21,6 +23,7 @@ function App() {
           <Route path="/checkout" exact component={Checkout} />
           <Route path="/product/:id" exact component={SingleProduct} />
           <Route path="/store" exact component={Store} />
+          <Route path="/fake-product" exact component={FakeProduct} />
         </Switch>
       </Router>
 

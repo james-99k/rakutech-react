@@ -1,0 +1,29 @@
+@import '../../style.scss';
+
+.prices {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background: $aliceBlue;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 14px;
+    margin: 20px 0;
+
+    h3 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &__ranger {
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .slider {
+        height: 20px;
+        width: 100%;
+        background: $blueCharcoal;
+    }
+}

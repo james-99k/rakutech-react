@@ -1,0 +1,98 @@
+@import '../../style.scss';
+
+.color {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background: $aliceBlue;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 14px;
+    margin: 20px 0;
+
+    h3 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &__choices {
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+
+        .blue {
+            border: 2px solid white;
+            box-shadow:0 0 0 2px rgb(55, 143, 243);
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            background-color: blue;
+            margin-left: 10px;
+        }
+
+        .red {
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background-color: red;
+            margin-left: 10px;
+
+            &:hover {
+                border: 2px solid white;
+                box-shadow:0 0 0 2px rgb(241, 109, 109);
+            }
+        }
+
+        .black {
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background-color: black;
+            margin-left: 10px;
+
+            &:hover {
+                border: 2px solid white;
+                box-shadow:0 0 0 2px black;
+            }
+        }
+
+        .gold {
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background-color: yellow;
+            margin-left: 10px;
+
+            &:hover {
+                border: 2px solid white;
+                box-shadow:0 0 0 2px rgb(248, 248, 143);
+            }
+        }
+
+        .pink {
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background-color: #FF00B4;
+            margin-left: 10px;
+
+            &:hover {
+                border: 2px solid white;
+                box-shadow:0 0 0 2px #FF00B4;
+            }
+        }
+
+        .white {
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background-color: #EFDFDF;
+            margin-left: 10px;
+
+            &:hover {
+                border: 2px solid white;
+                box-shadow:0 0 0 2px #EFDFDF;  
+            }
+        }
+    }
+}

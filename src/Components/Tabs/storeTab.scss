@@ -1,0 +1,38 @@
+@import '../../style.scss';
+
+.accessories {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    background: $aliceBlue;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 14px;
+    margin: 0 0 20px 0;
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        li {
+            list-style: none;
+            padding: 10px 0;
+        }
+    }
+
+    &__quantity {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        
+        li {
+            list-style: none;
+            padding: 10px 0;
+        }
+    }
+}

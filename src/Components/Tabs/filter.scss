@@ -1,0 +1,76 @@
+@import '../../style.scss';
+
+.accessories-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    background: $aliceBlue;
+    margin: 20px 0;
+    
+    &__content {
+        display: flex;
+        height: 40px;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 14px;
+
+        span {
+            padding: 0 10px;
+        }
+        
+        &--dropdown {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $spindle;
+            
+            .dropdown {
+                padding: 5px 5px;
+
+                i {
+                    padding-left: 20px;
+                }
+            }
+
+            .dropdown__options {
+                margin-right: 10px;
+
+                ul {     
+                    padding: 5px 0;  
+                    margin: 0;
+                }
+
+                &--tab{
+                    text-align: center;
+                    padding: 5px 24px;
+                    border: 1px solid $spindle;
+                    
+                    &:hover {
+                        border: 1px solid $radicalRed;
+                    }
+                }
+            }
+
+            a {    
+                display:block;
+                text-decoration: none;
+            }   
+
+            li {    
+                display:block;
+
+                ul {
+                    display:none;
+                    position:absolute;
+                    z-index:1;
+
+                }
+
+                &:hover ul {    
+                    display:block;    
+                }  
+            }   
+        }
+    }
+}

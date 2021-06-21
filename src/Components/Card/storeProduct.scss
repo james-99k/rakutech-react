@@ -1,0 +1,140 @@
+@import '../../style.scss';
+
+.accessories-list {
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 1px solid $spindle;
+
+    &__left {
+
+        &--image {
+            height: 200px;
+            width: 200px;
+            border-radius: 4px;
+            border: 1px solid $spindle;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                height: 90%;
+                width: 90%;
+                object-fit: contain;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__right {
+        padding: 0 20px;
+
+        &--title {
+            font-size: 20px;
+            font-weight: 600;
+            padding-bottom: 10px;
+
+        }
+
+        &--review {
+            display: flex;
+            padding: 20px 0;
+            border-bottom: 1px solid $spindle;
+
+            .rating {
+
+                &__star {
+                    color: $goldenPoppy;
+                }
+            }
+            
+            .count {
+                padding: 0 10px;
+            }
+
+            .link {
+
+                a {
+                    color: $dodgerBlue;
+                }
+            }
+        }
+
+        &--price {
+            display: flex;
+            padding: 10px 0;
+
+            .discounted {
+                color: $radicalRed;
+            }
+
+            .original {
+                padding: 0 10px;
+                color: $spindle;
+                text-decoration: line-through;
+            }
+        }
+
+        &--details {
+            padding: 10px 0;
+            font-size: 13px;
+        }
+
+        &--buttons {
+            padding: 10px 0;
+            display: flex;
+
+            .add-to-cart {
+                padding: 10px 20px;
+                border-radius: 6px;
+                background: #cee5faf6;
+
+                i {
+                    padding-right: 10px;
+                    color: $dodgerBlue;
+                }
+
+                span {
+                    color: $dodgerBlue;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    background: $dodgerBlue;
+
+                    i {
+                        color: #cee5faf6;
+                    }
+
+                    span {
+                        color: #cee5faf6;
+                    }
+                }
+            }
+
+            .favorite {
+                padding: 10px 20px;
+                border-radius: 6px;
+                background: #cee5faf6;
+                color: $dodgerBlue;
+                margin: 0 20px;
+
+                i {
+                    color: $dodgerBlue;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    background: $dodgerBlue;
+
+                    i {
+                        color: #cee5faf6;
+                    }
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7d269446.chunk.css",
+    "main.js": "/static/js/main.2a6f1972.chunk.js",
+    "main.js.map": "/static/js/main.2a6f1972.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.bd371b0a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.bd371b0a.js.map",
+    "static/js/2.94e40057.chunk.js": "/static/js/2.94e40057.chunk.js",
+    "static/js/2.94e40057.chunk.js.map": "/static/js/2.94e40057.chunk.js.map",
+    "static/js/3.e203693b.chunk.js": "/static/js/3.e203693b.chunk.js",
+    "static/js/3.e203693b.chunk.js.map": "/static/js/3.e203693b.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.7d269446.chunk.css.map": "/static/css/main.7d269446.chunk.css.map",
+    "static/js/2.94e40057.chunk.js.LICENSE.txt": "/static/js/2.94e40057.chunk.js.LICENSE.txt",
+    "static/media/Oculus-Rift.11f57019.png": "/static/media/Oculus-Rift.11f57019.png",
+    "static/media/airPods.406dc7ed.jpg": "/static/media/airPods.406dc7ed.jpg",
+    "static/media/airpodsMax.6d9beba6.jpg": "/static/media/airpodsMax.6d9beba6.jpg",
+    "static/media/appleWatch.c63e4bb5.png": "/static/media/appleWatch.c63e4bb5.png",
+    "static/media/beats.8e4c1e36.png": "/static/media/beats.8e4c1e36.png",
+    "static/media/signup.scss": "/static/media/cover-img.b4faa0df.jpg",
+    "static/media/gague.1ff295b7.png": "/static/media/gague.1ff295b7.png",
+    "static/media/goPro.5657dea9.png": "/static/media/goPro.5657dea9.png",
+    "static/media/iPhone-3.fba26d95.png": "/static/media/iPhone-3.fba26d95.png",
+    "static/media/ipad-back.7b963ebc.png": "/static/media/ipad-back.7b963ebc.png",
+    "static/media/ipad.6a5587ad.jpg": "/static/media/ipad.6a5587ad.jpg",
+    "static/media/iphone1.ddc19758.png": "/static/media/iphone1.ddc19758.png",
+    "static/media/iphone11-white.b5492d60.png": "/static/media/iphone11-white.b5492d60.png",
+    "static/media/macbook-air-space-gray.b953ebeb.jpg": "/static/media/macbook-air-space-gray.b953ebeb.jpg",
+    "static/media/product.scss": "/static/media/macbook.682e8303.png",
+    "static/media/macbook2.f9c2fbd0.png": "/static/media/macbook2.f9c2fbd0.png",
+    "static/media/magic-keyboard.541cac42.png": "/static/media/magic-keyboard.541cac42.png",
+    "static/media/smart-phone-card.c2ae5d9f.png": "/static/media/smart-phone-card.c2ae5d9f.png",
+    "static/media/tv.6c80be5b.png": "/static/media/tv.6c80be5b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bd371b0a.js",
+    "static/js/2.94e40057.chunk.js",
+    "static/css/main.7d269446.chunk.css",
+    "static/js/main.2a6f1972.chunk.js"
+  ]
+}

@@ -4,15 +4,15 @@ import Tab from '../Header/navTab'
 import Logo from '../Header/logo'
 import NavMain from '../Navigation/navMain'
 
-// import History from '../Main/Store/historyTab'
-// import StoreTab from '../Main/Store/storeTab'
-// import PricesTab from '../Main/Store/pricesTab'
-// import ColorTab from '../Main/Store/colorTab'
-// import BrandTab from '../Main/Store/brandTab'
-// import Banner from '../Main/Store/banner'
-// import Filter from '../Main/Store/filter'
-// import Product from '../Main/Store/storeProduct'
-// import Page from '../Main/Store/pageTab'
+import History from '../Tabs/historyTab'
+import StoreTab from '../Tabs/storeTab'
+import PricesTab from '../Tabs/priceTab'
+import ColorTab from '../Tabs/colorTab'
+import BrandTab from '../Tabs/brandTab'
+import Banner from '../Banner/bannerStore'
+import Filter from '../Tabs/filter'
+import Product from '../Card/storeProduct'
+import Page from '../Tabs/pageTab'
 import { connect } from 'react-redux'
 
 const Store = ({ products }) => {
@@ -21,7 +21,7 @@ const Store = ({ products }) => {
             <Tab />
             <Logo />
             <NavMain />
-            {/* <History />
+            <History />
             <div className="container-store">
                 <div className="left-store">
                     <StoreTab />
@@ -35,22 +35,20 @@ const Store = ({ products }) => {
                 <div className="right-store">
                     <Banner />
                     <Filter />
-                    {products.map(product => {
-                        <Product key={product.id} productData={product}/>
-                    })}
+                    {products.map((product) => (
+                        <Product key={product.id} product={product} />
+                    ))}
                     <Page />
                 </div>
-            </div> */}
+            </div>
         </div>
     )
 }
 
-// const mapStateToProps = state => {
-//     return {
-//         products: state.addToCart.products,
-//     }
-// }
+const mapStateToProps = state => {
+    return {
+        products: state.cart.products,
+    }
+}
 
-// export default connect(mapStateToProps)(Store)
-
-export default Store
+export default connect(mapStateToProps)(Store)

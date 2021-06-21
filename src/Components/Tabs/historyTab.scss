@@ -1,0 +1,31 @@
+@import '../../style.scss';
+
+.history-bar {
+    padding: 10px 0;
+    margin: 20px 0;
+    background: $aliceBlue;
+
+    &__links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+
+        li {
+            list-style: none;
+
+            span {
+                color: $spindle;
+                padding: 0 5px;
+            }
+
+            a{
+                color: $dodgerBlue;
+            }
+
+            .active {
+                color: $blueCharcoal;
+            }
+        }
+    }
+}
